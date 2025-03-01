@@ -24,12 +24,45 @@ h1 {
     text-align: center; /* 標題置中 */
 }
 
+p {
+    margin-bottom: 10px;
+    text-align: center; /* 標題置中 */
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     display: block;
     margin: 20px auto; /* 按鈕置中 */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.image-container {
+    position: fixed;
+    bottom: 50px; /* 距離頁底2公分 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 圖片之間的間距 */
+}
+
+.image-container img {
+    width: 100px; /* 圖片寬度 */
+    height: auto; /* 保持圖片比例 */
+    cursor: pointer;
 }
 
 #quizContainer {

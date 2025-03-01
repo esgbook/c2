@@ -5,15 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESG知識庫</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 新增的樣式 */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .image-container {
+            position: fixed;
+            bottom: 50px; /* 距離頁底2公分 */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* 圖片之間的間距 */
+        }
+
+        .image-container img {
+            width: 100px; /* 圖片寬度 */
+            height: auto; /* 保持圖片比例 */
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>第二章永續資訊揭露題庫</h1>
-        <center><p>中山永續金融科技股份有限公司(研發)</p></center></center>
+        <h1>第一章永續基本概念題庫</h1>
+        <p>中山永續金融科技股份有限公司(研發)</p>
         <button id="startQuiz">開始測驗</button>
-
-
     </div>
+
+    <!-- 圖片容器 -->
+    <div class="image-container">
+        <a href="https://www.taobao.com/" target="_blank">
+            <img src="https://via.placeholder.com/100" alt="Taobao">
+        </a>
+        <a href="https://www.baidu.com/" target="_blank">
+            <img src="https://via.placeholder.com/100" alt="Baidu">
+        </a>
+    </div>
+
+    <!-- 頁底版權信息 -->
+    <div class="footer">
+        <p>Copyright © 2025</p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
